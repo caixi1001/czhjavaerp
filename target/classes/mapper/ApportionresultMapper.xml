@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.accp.dao.ApportionresultDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.accp.entity.Apportionresult">
+        <result column="atiid" property="atiid" />
+        <result column="atisequ" property="atisequ" />
+        <result column="storageid" property="storageid" />
+        <result column="matid" property="matid" />
+        <result column="matname" property="matname" />
+        <result column="stockprice" property="stockprice" />
+        <result column="matspec" property="matspec" />
+        <result column="atinum" property="atinum" />
+        <result column="ademoney" property="ademoney" />
+        <result column="enables" property="enables" />
+        <result column="safetyone" property="safetyone" />
+        <result column="safetytwo" property="safetytwo" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        atiid, atisequ, storageid, matid, matname, stockprice, matspec, atinum, ademoney, enables, safetyone, safetytwo
+    </sql>
+
+</mapper>

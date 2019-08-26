@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.accp.dao.AdvancegatherDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.accp.entity.Advancegather">
+        <id column="billId" property="billId" />
+        <result column="billDate" property="billDate" />
+        <result column="sinId" property="sinId" />
+        <result column="Cliid" property="Cliid" />
+        <result column="clishortname" property="clishortname" />
+        <result column="currencyType" property="currencyType" />
+        <result column="ReckonTypeF" property="ReckonTypeF" />
+        <result column="ReckonTypeS" property="ReckonTypeS" />
+        <result column="ReckonTypeT" property="ReckonTypeT" />
+        <result column="ReckonMoneyF" property="ReckonMoneyF" />
+        <result column="ReckonMoneyS" property="ReckonMoneyS" />
+        <result column="ReckonMoneyT" property="ReckonMoneyT" />
+        <result column="GatherDiscount" property="GatherDiscount" />
+        <result column="GatherendaccountMonth" property="GatherendaccountMonth" />
+        <result column="Empid" property="Empid" />
+        <result column="empName" property="empName" />
+        <result column="Depid" property="Depid" />
+        <result column="depName" property="depName" />
+        <result column="makeEmpName" property="makeEmpName" />
+        <result column="AuditingEmpName" property="AuditingEmpName" />
+        <result column="checkstate" property="checkstate" />
+        <result column="Remark" property="Remark" />
+        <result column="enables" property="enables" />
+        <result column="safetyone" property="safetyone" />
+        <result column="safetytwo" property="safetytwo" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        billId, billDate, sinId, Cliid, clishortname, currencyType, ReckonTypeF, ReckonTypeS, ReckonTypeT, ReckonMoneyF, ReckonMoneyS, ReckonMoneyT, GatherDiscount, GatherendaccountMonth, Empid, empName, Depid, depName, makeEmpName, AuditingEmpName, checkstate, Remark, enables, safetyone, safetytwo
+    </sql>
+
+</mapper>

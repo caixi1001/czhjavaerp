@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.accp.dao.ApportionwiseDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.accp.entity.Apportionwise">
+        <result column="wisid" property="wisid" />
+        <result column="wisname" property="wisname" />
+        <result column="wisename" property="wisename" />
+        <result column="wisremark" property="wisremark" />
+        <result column="enables" property="enables" />
+        <result column="safetyone" property="safetyone" />
+        <result column="safetytwo" property="safetytwo" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        wisid, wisname, wisename, wisremark, enables, safetyone, safetytwo
+    </sql>
+
+</mapper>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.accp.dao.CopewithDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.accp.entity.Copewith">
+        <id column="customerId" property="customerId" />
+        <result column="cash" property="cash" />
+        <result column="visa" property="visa" />
+        <result column="otherPay" property="otherPay" />
+        <result column="cashStyleName" property="cashStyleName" />
+        <result column="visaStyleName" property="visaStyleName" />
+        <result column="otherPayStyleID" property="otherPayStyleID" />
+        <result column="fundBillNo" property="fundBillNo" />
+        <result column="billDate" property="billDate" />
+        <result column="rcurrencyId" property="rcurrencyId" />
+        <result column="rcurrencyName" property="rcurrencyName" />
+        <result column="exchRate" property="exchRate" />
+        <result column="offSetStyle" property="offSetStyle" />
+        <result column="proofnumber" property="proofnumber" />
+        <result column="accMonthToMonth" property="accMonthToMonth" />
+        <result column="discountPer" property="discountPer" />
+        <result column="deptFrom" property="deptFrom" />
+        <result column="maker" property="maker" />
+        <result column="permitter" property="permitter" />
+        <result column="project" property="project" />
+        <result column="beiyony" property="beiyony" />
+        <result column="beiyonr" property="beiyonr" />
+        <result column="beiyons" property="beiyons" />
+        <result column="beiyonf" property="beiyonf" />
+        <result column="beiyonw" property="beiyonw" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        customerId, cash, visa, otherPay, cashStyleName, visaStyleName, otherPayStyleID, fundBillNo, billDate, rcurrencyId, rcurrencyName, exchRate, offSetStyle, proofnumber, accMonthToMonth, discountPer, deptFrom, maker, permitter, project, beiyony, beiyonr, beiyons, beiyonf, beiyonw
+    </sql>
+
+</mapper>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.accp.dao.AdjustmainDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.accp.entity.Adjustmain">
+        <id column="adjustNO" property="adjustNO" />
+        <result column="adjustStyle" property="adjustStyle" />
+        <result column="adjustDate" property="adjustDate" />
+        <result column="maker" property="maker" />
+        <result column="makerID" property="makerID" />
+        <result column="permitter" property="permitter" />
+        <result column="permitterID" property="permitterID" />
+        <result column="sumQty" property="sumQty" />
+        <result column="sumCost" property="sumCost" />
+        <result column="udef1" property="udef1" />
+        <result column="udef2" property="udef2" />
+        <result column="remark" property="remark" />
+        <result column="departID" property="departID" />
+        <result column="hasCheck" property="hasCheck" />
+        <result column="wareID" property="wareID" />
+        <result column="salesID" property="salesID" />
+        <result column="zeroFilter" property="zeroFilter" />
+        <result column="sumCurQty" property="sumCurQty" />
+        <result column="sumCheckQty" property="sumCheckQty" />
+        <result column="incSubjectID" property="incSubjectID" />
+        <result column="decSujectID" property="decSujectID" />
+        <result column="columOne" property="columOne" />
+        <result column="columTow" property="columTow" />
+        <result column="columThree" property="columThree" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        adjustNO, adjustStyle, adjustDate, maker, makerID, permitter, permitterID, sumQty, sumCost, udef1, udef2, remark, departID, hasCheck, wareID, salesID, zeroFilter, sumCurQty, sumCheckQty, incSubjectID, decSujectID, columOne, columTow, columThree
+    </sql>
+
+</mapper>

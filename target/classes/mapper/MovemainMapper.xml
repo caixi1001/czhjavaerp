@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.accp.dao.MovemainDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.accp.entity.Movemain">
+        <id column="moveNO" property="moveNO" />
+        <result column="moveDate" property="moveDate" />
+        <result column="makerID" property="makerID" />
+        <result column="maker" property="maker" />
+        <result column="permitterID" property="permitterID" />
+        <result column="permitter" property="permitter" />
+        <result column="wareID" property="wareID" />
+        <result column="wareOutID" property="wareOutID" />
+        <result column="sumQty" property="sumQty" />
+        <result column="hasCheck" property="hasCheck" />
+        <result column="udef1" property="udef1" />
+        <result column="udef2" property="udef2" />
+        <result column="remark" property="remark" />
+        <result column="columOne" property="columOne" />
+        <result column="columTow" property="columTow" />
+        <result column="columThree" property="columThree" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        moveNO, moveDate, makerID, maker, permitterID, permitter, wareID, wareOutID, sumQty, hasCheck, udef1, udef2, remark, columOne, columTow, columThree
+    </sql>
+
+</mapper>

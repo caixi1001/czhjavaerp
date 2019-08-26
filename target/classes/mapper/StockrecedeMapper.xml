@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.accp.dao.StockrecedeDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.accp.entity.Stockrecede">
+        <result column="recid" property="recid" />
+        <result column="recdate" property="recdate" />
+        <result column="peoid" property="peoid" />
+        <result column="purveyname" property="purveyname" />
+        <result column="peoaddress" property="peoaddress" />
+        <result column="stoid" property="stoid" />
+        <result column="depotname" property="depotname" />
+        <result column="containtax" property="containtax" />
+        <result column="anewstorage" property="anewstorage" />
+        <result column="stoperson" property="stoperson" />
+        <result column="stopersonid" property="stopersonid" />
+        <result column="stodept" property="stodept" />
+        <result column="stodeptid" property="stodeptid" />
+        <result column="makeperson" property="makeperson" />
+        <result column="auditingperson" property="auditingperson" />
+        <result column="recremark" property="recremark" />
+        <result column="estate" property="estate" />
+        <result column="stockrecedename" property="stockrecedename" />
+        <result column="enables" property="enables" />
+        <result column="safetyone" property="safetyone" />
+        <result column="safetytwo" property="safetytwo" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        recid, recdate, peoid, purveyname, peoaddress, stoid, depotname, containtax, anewstorage, stoperson, stopersonid, stodept, stodeptid, makeperson, auditingperson, recremark, estate, stockrecedename, enables, safetyone, safetytwo
+    </sql>
+
+</mapper>

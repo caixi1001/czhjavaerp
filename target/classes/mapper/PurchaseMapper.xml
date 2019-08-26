@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.accp.dao.PurchaseDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.accp.entity.Purchase">
+        <id column="fundBillNo" property="fundBillNo" />
+        <result column="billDate" property="billDate" />
+        <result column="custId" property="custId" />
+        <result column="invoiceNo" property="invoiceNo" />
+        <result column="currId" property="currId" />
+        <result column="exchRate" property="exchRate" />
+        <result column="deptId" property="deptId" />
+        <result column="deptName" property="deptName" />
+        <result column="projectID" property="projectID" />
+        <result column="projectName" property="projectName" />
+        <result column="salesmanid" property="salesmanid" />
+        <result column="personName" property="personName" />
+        <result column="priceOfTax" property="priceOfTax" />
+        <result column="voucherNo" property="voucherNo" />
+        <result column="cVoucherNo" property="cVoucherNo" />
+        <result column="affirmState" property="affirmState" />
+        <result column="bllType" property="bllType" />
+        <result column="kerSign" property="kerSign" />
+        <result column="permitterSign" property="permitterSign" />
+        <result column="beiyon" property="beiyon" />
+        <result column="beiyonr" property="beiyonr" />
+        <result column="beiyons" property="beiyons" />
+        <result column="beiyonf" property="beiyonf" />
+        <result column="beiyonw" property="beiyonw" />
+        <result column="beiyonl" property="beiyonl" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        fundBillNo, billDate, custId, invoiceNo, currId, exchRate, deptId, deptName, projectID, projectName, salesmanid, personName, priceOfTax, voucherNo, cVoucherNo, affirmState, bllType, kerSign, permitterSign, beiyon, beiyonr, beiyons, beiyonf, beiyonw, beiyonl
+    </sql>
+
+</mapper>

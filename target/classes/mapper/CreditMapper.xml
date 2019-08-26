@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.accp.dao.CreditDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.accp.entity.Credit">
+        <id column="dueToId" property="dueToId" />
+        <result column="payTerm" property="payTerm" />
+        <result column="prepayDay" property="prepayDay" />
+        <result column="cashPayStyle" property="cashPayStyle" />
+        <result column="visaPayStyle" property="visaPayStyle" />
+        <result column="otherPayStyle" property="otherPayStyle" />
+        <result column="cashPayStyleName" property="cashPayStyleName" />
+        <result column="visaPayStyleName" property="visaPayStyleName" />
+        <result column="otherPayStyleName" property="otherPayStyleName" />
+        <result column="uDefone" property="uDefone" />
+        <result column="uDeftow" property="uDeftow" />
+        <result column="remark" property="remark" />
+        <result column="beiyon" property="beiyon" />
+        <result column="beiyonr" property="beiyonr" />
+        <result column="beiyons" property="beiyons" />
+        <result column="beiyonf" property="beiyonf" />
+        <result column="beiyonw" property="beiyonw" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        dueToId, payTerm, prepayDay, cashPayStyle, visaPayStyle, otherPayStyle, cashPayStyleName, visaPayStyleName, otherPayStyleName, uDefone, uDeftow, remark, beiyon, beiyonr, beiyons, beiyonf, beiyonw
+    </sql>
+
+</mapper>

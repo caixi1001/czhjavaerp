@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.accp.dao.ComproductDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.accp.entity.Comproduct">
+        <id column="prodId" property="prodId" />
+        <result column="className" property="className" />
+        <result column="prodName" property="prodName" />
+        <result column="classId" property="classId" />
+        <result column="productclassName" property="productclassName" />
+        <result column="suggestPrice" property="suggestPrice" />
+        <result column="suggestPriceA" property="suggestPriceA" />
+        <result column="suggestPriceB" property="suggestPriceB" />
+        <result column="suggestPriceC" property="suggestPriceC" />
+        <result column="suggestPriceD" property="suggestPriceD" />
+        <result column="suggestPriceE" property="suggestPriceE" />
+        <result column="stdPrice" property="stdPrice" />
+        <result column="prodForm" property="prodForm" />
+        <result column="priceOfTax" property="priceOfTax" />
+        <result column="busiTaxRate" property="busiTaxRate" />
+        <result column="advanceDays" property="advanceDays" />
+        <result column="majorSupplierId" property="majorSupplierId" />
+        <result column="majorSupplierName" property="majorSupplierName" />
+        <result column="sluggishDays" property="sluggishDays" />
+        <result column="invalidDate" property="invalidDate" />
+        <result column="memo" property="memo" />
+        <result column="stdUnitId" property="stdUnitId" />
+        <result column="stdUnitName" property="stdUnitName" />
+        <result column="safetyone" property="safetyone" />
+        <result column="safetytwo" property="safetytwo" />
+        <result column="enables" property="enables" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        prodId, className, prodName, classId, productclassName, suggestPrice, suggestPriceA, suggestPriceB, suggestPriceC, suggestPriceD, suggestPriceE, stdPrice, prodForm, priceOfTax, busiTaxRate, advanceDays, majorSupplierId, majorSupplierName, sluggishDays, invalidDate, memo, stdUnitId, stdUnitName, safetyone, safetytwo, enables
+    </sql>
+
+</mapper>

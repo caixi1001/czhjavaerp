@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.accp.dao.TakeprepayDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.accp.entity.Takeprepay">
+        <id column="copewithNo" property="copewithNo" />
+        <result column="classified" property="classified" />
+        <result column="sourceNo" property="sourceNo" />
+        <result column="paymentYe" property="paymentYe" />
+        <result column="deptno" property="deptno" />
+        <result column="deptName" property="deptName" />
+        <result column="qYmoney" property="qYmoney" />
+        <result column="sourceAbstract" property="sourceAbstract" />
+        <result column="beiyon" property="beiyon" />
+        <result column="beiyonr" property="beiyonr" />
+        <result column="beiyons" property="beiyons" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        copewithNo, classified, sourceNo, paymentYe, deptno, deptName, qYmoney, sourceAbstract, beiyon, beiyonr, beiyons
+    </sql>
+
+</mapper>

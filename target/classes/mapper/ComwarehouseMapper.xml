@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.accp.dao.ComwarehouseDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.accp.entity.Comwarehouse">
+        <id column="wareHouseID" property="wareHouseID" />
+        <result column="wareHouseName" property="wareHouseName" />
+        <result column="shortName" property="shortName" />
+        <result column="engName" property="engName" />
+        <result column="linkMan" property="linkMan" />
+        <result column="telephone" property="telephone" />
+        <result column="wareHouseAddress" property="wareHouseAddress" />
+        <result column="memo" property="memo" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        wareHouseID, wareHouseName, shortName, engName, linkMan, telephone, wareHouseAddress, memo
+    </sql>
+
+</mapper>

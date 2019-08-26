@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.accp.dao.ClashfunddetailstwoDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.accp.entity.Clashfunddetailstwo">
+        <id column="billId" property="billId" />
+        <result column="coteMark" property="coteMark" />
+        <result column="gatherId" property="gatherId" />
+        <result column="sinName" property="sinName" />
+        <result column="originBillId" property="originBillId" />
+        <result column="originoddrowId" property="originoddrowId" />
+        <result column="advanceMoney" property="advanceMoney" />
+        <result column="Advancebalance" property="Advancebalance" />
+        <result column="adoptAdvanceMoney" property="adoptAdvanceMoney" />
+        <result column="enables" property="enables" />
+        <result column="safetyone" property="safetyone" />
+        <result column="safetytwo" property="safetytwo" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        billId, coteMark, gatherId, sinName, originBillId, originoddrowId, advanceMoney, Advancebalance, adoptAdvanceMoney, enables, safetyone, safetytwo
+    </sql>
+
+</mapper>

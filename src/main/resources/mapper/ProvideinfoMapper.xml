@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.accp.dao.ProvideinfoDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.accp.entity.Provideinfo">
+        <id column="peoid" property="peoid" />
+        <result column="peoname" property="peoname" />
+        <result column="peoshortname" property="peoshortname" />
+        <result column="peoascription" property="peoascription" />
+        <result column="peopeeid" property="peopeeid" />
+        <result column="peopeename" property="peopeename" />
+        <result column="peoarea" property="peoarea" />
+        <result column="peoprincipal" property="peoprincipal" />
+        <result column="peolinkman" property="peolinkman" />
+        <result column="peophoneone" property="peophoneone" />
+        <result column="peophonetwo" property="peophonetwo" />
+        <result column="peomobilephone" property="peomobilephone" />
+        <result column="peobankaccounts" property="peobankaccounts" />
+        <result column="peoopenbank" property="peoopenbank" />
+        <result column="peoempid" property="peoempid" />
+        <result column="peoempname" property="peoempname" />
+        <result column="peocalling" property="peocalling" />
+        <result column="peoemail" property="peoemail" />
+        <result column="peoweb" property="peoweb" />
+        <result column="peofaxes" property="peofaxes" />
+        <result column="peocreatedate" property="peocreatedate" />
+        <result column="peocreditclass" property="peocreditclass" />
+        <result column="peozhangkuanedu" property="peozhangkuanedu" />
+        <result column="peoremainedu" property="peoremainedu" />
+        <result column="peomonthreckoning" property="peomonthreckoning" />
+        <result column="peoqcprepaymoney" property="peoqcprepaymoney" />
+        <result column="peoqcdealmoney" property="peoqcdealmoney" />
+        <result column="peoqmprepaymoney" property="peoqmprepaymoney" />
+        <result column="peoqmdealmoney" property="peoqmdealmoney" />
+        <result column="peoremark" property="peoremark" />
+        <result column="peotrash" property="peotrash" />
+        <result column="safetyone" property="safetyone" />
+        <result column="safetytwo" property="safetytwo" />
+        <result column="enables" property="enables" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        peoid, peoname, peoshortname, peoascription, peopeeid, peopeename, peoarea, peoprincipal, peolinkman, peophoneone, peophonetwo, peomobilephone, peobankaccounts, peoopenbank, peoempid, peoempname, peocalling, peoemail, peoweb, peofaxes, peocreatedate, peocreditclass, peozhangkuanedu, peoremainedu, peomonthreckoning, peoqcprepaymoney, peoqcdealmoney, peoqmprepaymoney, peoqmdealmoney, peoremark, peotrash, safetyone, safetytwo, enables
+    </sql>
+
+</mapper>

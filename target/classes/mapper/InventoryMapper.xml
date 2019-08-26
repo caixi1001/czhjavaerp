@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.accp.dao.InventoryDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.accp.entity.Inventory">
+        <id column="stocknumber" property="stocknumber" />
+        <result column="columnno" property="columnno" />
+        <result column="stockName" property="stockName" />
+        <result column="specifications" property="specifications" />
+        <result column="organizationName" property="organizationName" />
+        <result column="quantity" property="quantity" />
+        <result column="univalence" property="univalence" />
+        <result column="moneyy" property="moneyy" />
+        <result column="taxrate" property="taxrate" />
+        <result column="tax" property="tax" />
+        <result column="taxamount" property="taxamount" />
+        <result column="sourceOdd" property="sourceOdd" />
+        <result column="singlesource" property="singlesource" />
+        <result column="journalizingremark" property="journalizingremark" />
+        <result column="rate" property="rate" />
+        <result column="differenceprice" property="differenceprice" />
+        <result column="differencepricebwb" property="differencepricebwb" />
+        <result column="balancetotal" property="balancetotal" />
+        <result column="beiyon" property="beiyon" />
+        <result column="beiyonr" property="beiyonr" />
+        <result column="beiyons" property="beiyons" />
+        <result column="beiyonf" property="beiyonf" />
+        <result column="beiyonw" property="beiyonw" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        columnno, stocknumber, stockName, specifications, organizationName, quantity, univalence, moneyy, taxrate, tax, taxamount, sourceOdd, singlesource, journalizingremark, rate, differenceprice, differencepricebwb, balancetotal, beiyon, beiyonr, beiyons, beiyonf, beiyonw
+    </sql>
+
+</mapper>

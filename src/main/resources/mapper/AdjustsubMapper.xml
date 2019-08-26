@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.accp.dao.AdjustsubDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.accp.entity.Adjustsub">
+        <id column="adjustNO" property="adjustNO" />
+        <result column="adjustStyle" property="adjustStyle" />
+        <result column="serNO" property="serNO" />
+        <result column="adjustDate" property="adjustDate" />
+        <result column="curQty" property="curQty" />
+        <result column="checkQty" property="checkQty" />
+        <result column="quantity" property="quantity" />
+        <result column="price" property="price" />
+        <result column="amount" property="amount" />
+        <result column="itemRemark" property="itemRemark" />
+        <result column="prodID" property="prodID" />
+        <result column="columOne" property="columOne" />
+        <result column="columTow" property="columTow" />
+        <result column="columThree" property="columThree" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        adjustNO, adjustStyle, serNO, adjustDate, curQty, checkQty, quantity, price, amount, itemRemark, prodID, columOne, columTow, columThree
+    </sql>
+
+</mapper>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.accp.dao.SaleorderlistDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.accp.entity.Saleorderlist">
+        <result column="billNo" property="billNo" />
+        <result column="prodID" property="prodID" />
+        <result column="prodName" property="prodName" />
+        <result column="prdClassID" property="prdClassID" />
+        <result column="prdClassName" property="prdClassName" />
+        <result column="prodSize" property="prodSize" />
+        <result column="sUnit" property="sUnit" />
+        <result column="sQuantity" property="sQuantity" />
+        <result column="oldPrice" property="oldPrice" />
+        <result column="discount" property="discount" />
+        <result column="sPrice" property="sPrice" />
+        <result column="amount" property="amount" />
+        <result column="taxRate" property="taxRate" />
+        <result column="taxAmt" property="taxAmt" />
+        <result column="vFTotal" property="vFTotal" />
+        <result column="preInDate" property="preInDate" />
+        <result column="qtyRemain" property="qtyRemain" />
+        <result column="isGift" property="isGift" />
+        <result column="itemRemark" property="itemRemark" />
+        <result column="fromNo" property="fromNo" />
+        <result column="tranType" property="tranType" />
+        <result column="columone" property="columone" />
+        <result column="columtow" property="columtow" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        billNo, prodID, prodName, prdClassID, prdClassName, prodSize, sUnit, sQuantity, oldPrice, discount, sPrice, amount, taxRate, taxAmt, vFTotal, preInDate, qtyRemain, isGift, itemRemark, fromNo, tranType, columone, columtow
+    </sql>
+
+</mapper>

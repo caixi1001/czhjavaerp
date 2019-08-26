@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.accp.dao.ComproductclassDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.accp.entity.Comproductclass">
+        <id column="classID" property="classID" />
+        <result column="className" property="className" />
+        <result column="engName" property="engName" />
+        <result column="accInventoryId" property="accInventoryId" />
+        <result column="accInventoryName" property="accInventoryName" />
+        <result column="accSaleID" property="accSaleID" />
+        <result column="accSaleName" property="accSaleName" />
+        <result column="accSaleCostID" property="accSaleCostID" />
+        <result column="accSaleCostName" property="accSaleCostName" />
+        <result column="giftExpenseID" property="giftExpenseID" />
+        <result column="giftExpenseName" property="giftExpenseName" />
+        <result column="otherIncomeID" property="otherIncomeID" />
+        <result column="otherIncomeName" property="otherIncomeName" />
+        <result column="otherExpenseID" property="otherExpenseID" />
+        <result column="otherExpenseName" property="otherExpenseName" />
+        <result column="otherCostID" property="otherCostID" />
+        <result column="otherCostName" property="otherCostName" />
+        <result column="memo" property="memo" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        classID, className, engName, accInventoryId, accInventoryName, accSaleID, accSaleName, accSaleCostID, accSaleCostName, giftExpenseID, giftExpenseName, otherIncomeID, otherIncomeName, otherExpenseID, otherExpenseName, otherCostID, otherCostName, memo
+    </sql>
+
+</mapper>

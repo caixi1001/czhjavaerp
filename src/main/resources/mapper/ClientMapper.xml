@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.accp.dao.ClientDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.accp.entity.Client">
+        <id column="cliid" property="cliid" />
+        <result column="clitypeid" property="clitypeid" />
+        <result column="cliname" property="cliname" />
+        <result column="clishortname" property="clishortname" />
+        <result column="cliaddress" property="cliaddress" />
+        <result column="cliarea" property="cliarea" />
+        <result column="cliename" property="cliename" />
+        <result column="clieshortname" property="clieshortname" />
+        <result column="cliprincipal" property="cliprincipal" />
+        <result column="clilinkman" property="clilinkman" />
+        <result column="cliphoneone" property="cliphoneone" />
+        <result column="cliphonetwo" property="cliphonetwo" />
+        <result column="cliphonethree" property="cliphonethree" />
+        <result column="clibankaccounts" property="clibankaccounts" />
+        <result column="cliopenbank" property="cliopenbank" />
+        <result column="empid" property="empid" />
+        <result column="climobilephone" property="climobilephone" />
+        <result column="cliemail" property="cliemail" />
+        <result column="cliweb" property="cliweb" />
+        <result column="clifaxes" property="clifaxes" />
+        <result column="clioldoutdate" property="clioldoutdate" />
+        <result column="clioldintodate" property="clioldintodate" />
+        <result column="clinewoutdate" property="clinewoutdate" />
+        <result column="clinewintodate" property="clinewintodate" />
+        <result column="clidiscount" property="clidiscount" />
+        <result column="clipricestep" property="clipricestep" />
+        <result column="clicreatedate" property="clicreatedate" />
+        <result column="clistopdate" property="clistopdate" />
+        <result column="clizhangkuanedu" property="clizhangkuanedu" />
+        <result column="cliremainedu" property="cliremainedu" />
+        <result column="clicondition" property="clicondition" />
+        <result column="climonthreckoning" property="climonthreckoning" />
+        <result column="clicreditstep" property="clicreditstep" />
+        <result column="cliqcdealmoney" property="cliqcdealmoney" />
+        <result column="cliqmpremoney" property="cliqmpremoney" />
+        <result column="cliqmdealmoney" property="cliqmdealmoney" />
+        <result column="cliotherremark" property="cliotherremark" />
+        <result column="clitrash" property="clitrash" />
+        <result column="safetyone" property="safetyone" />
+        <result column="safetytwo" property="safetytwo" />
+        <result column="enables" property="enables" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        cliid, clitypeid, cliname, clishortname, cliaddress, cliarea, cliename, clieshortname, cliprincipal, clilinkman, cliphoneone, cliphonetwo, cliphonethree, clibankaccounts, cliopenbank, empid, climobilephone, cliemail, cliweb, clifaxes, clioldoutdate, clioldintodate, clinewoutdate, clinewintodate, clidiscount, clipricestep, clicreatedate, clistopdate, clizhangkuanedu, cliremainedu, clicondition, climonthreckoning, clicreditstep, cliqcdealmoney, cliqmpremoney, cliqmdealmoney, cliotherremark, clitrash, safetyone, safetytwo, enables
+    </sql>
+
+</mapper>

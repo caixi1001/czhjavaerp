@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.accp.dao.OtheroutstocklistDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.accp.entity.Otheroutstocklist">
+        <result column="billNo" property="billNo" />
+        <result column="prodID" property="prodID" />
+        <result column="prodName" property="prodName" />
+        <result column="prdClassID" property="prdClassID" />
+        <result column="prdClassName" property="prdClassName" />
+        <result column="prodSize" property="prodSize" />
+        <result column="unit" property="unit" />
+        <result column="quantity" property="quantity" />
+        <result column="amount" property="amount" />
+        <result column="itemRemark" property="itemRemark" />
+        <result column="columone" property="columone" />
+        <result column="columtow" property="columtow" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        billNo, prodID, prodName, prdClassID, prdClassName, prodSize, unit, quantity, amount, itemRemark, columone, columtow
+    </sql>
+
+</mapper>
